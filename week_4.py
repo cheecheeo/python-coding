@@ -51,7 +51,7 @@ value_sixth_t6 = None
 # an index i and returns the value at index i (0..)
 
 # Exercise
-# write a binary function named `one_based_index` that takes a tuple of 
+# write a binary function named `one_based_index` that takes a tuple of
 # arbitrary length and an index i and returns the value at index i-1
 
 # Exercise

@@ -81,8 +81,34 @@ tuple_to_binary = lambda function, tuple: function(tuple[0], tuple[1])
 #                                           (2, 3) I should get back (5, 8)
 #                                           (13, 21) I should get back (34, 55)
 
+# like the match
+def http_error(status):
+    if status == 400:
+        None
+    elif status == 404:
+        None
+    else:
+        None
+
+def match_bool(boolean):
+    match boolean:
+        case True:
+            print("true")
+        case False:
+            print("false")
+        case _:
+            print("impossible")
+
+    if boolean:
+        print("true")
+    else:
+        print("false")
+
 def main():
     IPython.embed()
+    match_bool(5)
+    match_bool(True)
+    match_bool(False)
     print("Hello world!")
     print_twelve_different_values()
 

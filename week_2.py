@@ -54,10 +54,16 @@ increment_max_five_nonnegative_lambda = None
 # write and name the python function that corresponds to the math function
 # f(x) = 5x + 7
 # and its inverse function
+f_x_1 = lambda x: 5*x + 7
+g_y = lambda y: int((y-7)/5)
+composed_backwards = lambda x: g_y(f_x(x))
+composed = lambda x: f_x(g_y(x))
 
 # write and name the python function that corresponds to the math function
 # f(x) = 12x + 5
 # and its inverse function
+f_x_2 = lambda x: 12*x + 5
+g_y_2 = lambda y: (y - 5)/12
 
 # write and name the python function that corresponds to the math function
 # f(x, y) = 12x + 5y + 3

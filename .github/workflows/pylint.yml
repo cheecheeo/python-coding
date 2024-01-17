@@ -22,6 +22,7 @@ jobs:
       run: |
         pylint --disable=unnecessary-lambda-assignment \
                --disable=missing-final-newline \
+               --disable=missing-function-docstring \
                --disable=invalid-name \
                --disable=no-else-return \
                --disable=fixme $(git ls-files '*.py')

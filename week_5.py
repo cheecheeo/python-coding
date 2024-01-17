@@ -59,7 +59,7 @@ def min_john(x, y):
         return x
     else:
         return y
-    
+
 def max_john(x,y):
     if x > y:
         return x
@@ -114,14 +114,14 @@ west_description = "A wall with a shelf in front of it blocks your way."
 # example:
 # >>> function_name("N", (2, 3))
 # ("A dark hallway with the sound of a trumpet playing.", (2, 4))
-# 
+#
 # note, for the coordinate transformation the individual elements of the tuple
 # should be modified accordingly
 
 add_and_return_second = lambda x1, x2: (x2, x1 + x2)
 tuple_to_binary = lambda function, tuple: function(tuple[0], tuple[1])
 
-# Exercise: write and name a function that takes "two steps" of 
+# Exercise: write and name a function that takes "two steps" of
 # add_and_return_second
 #
 # examples:

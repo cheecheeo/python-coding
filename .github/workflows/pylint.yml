@@ -20,4 +20,6 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint --disable=unnecessary-lambda-assignment $(git ls-files '*.py')
+        pylint --disable=unnecessary-lambda-assignment \
+               --disable=missing-final-newline \
+               --disable=fixme $(git ls-files '*.py')

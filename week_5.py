@@ -6,7 +6,6 @@
 # edit and change the files however you wish!
 
 import IPython
-import math
 
 # The `if` expression looks like:
 #

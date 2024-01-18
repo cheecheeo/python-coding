@@ -1,9 +1,11 @@
-# Week 5 exercises
-# https://docs.google.com/presentation/d/1sXtDIGdlu_YTTsv8n7s1CibdBqHnFPXYqD32cgBD6sE/edit#slide=id.p
-# also read, familiarize, get some questions ready from:
-# https://openbookproject.net/thinkcs/python/english3e/tuples.html
-# https://openbookproject.net/thinkcs/python/english3e/conditionals.html
-# edit and change the files however you wish!
+"""
+Week 5 exercises
+https://docs.google.com/presentation/d/1sXtDIGdlu_YTTsv8n7s1CibdBqHnFPXYqD32cgBD6sE/edit#slide=id.p
+also read, familiarize, get some questions ready from:
+https://openbookproject.net/thinkcs/python/english3e/tuples.html
+https://openbookproject.net/thinkcs/python/english3e/conditionals.html
+edit and change the files however you wish!
+"""
 
 import IPython
 

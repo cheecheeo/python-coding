@@ -8,26 +8,6 @@ edit and change the files however you wish!
 
 import IPython
 
-x = 42
-y = "John"
-z = 73.7
-
-t = (x, y, z)
-t0 = (t, z, y)
-t1 = (t0, t)
-t2 = (t, t1, z)
-
-left = 1
-right = 3
-tree0 = (2, left, right)
-right_left = 5
-right_right = 7
-tree1 = (6, right_left, right_right)
-# tree2 has depth 3
-tree2 = (4, tree0, tree1)
-# Exercise: define a variable `tree3` with depth 3 holding both int and
-# float values
-
 # Exercise: write the sum_analog_of_factorial function.
 
 def factorial(n):

@@ -6,6 +6,9 @@ also read, familiarize, get some questions ready from:
 edit and change the files however you wish!
 """
 
+import doctest
+import IPython
+
 # The `if` expression looks like:
 #
 # EXPRESSION if BOOLEAN EXPRESSION else EXPRESSION
@@ -105,8 +108,6 @@ def main():
     >>> example_pippin
     'Pippin'
     """
-    import doctest
-    import IPython
 
     doctest.testmod()
     IPython.embed()

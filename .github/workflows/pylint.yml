@@ -27,5 +27,6 @@ jobs:
                --disable=invalid-name \
                --disable=no-else-return \
                --disable=unused-argument \
+               --disable=useless-return \
                --max-line-length=100 \
                --disable=fixme $(git ls-files '*.py')

@@ -1,0 +1,26 @@
+# from: https://doedotdev.medium.com/mypy-for-github-action-7da1ebee99e7
+name: Mypy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Mypy
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.11", "3.10"]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install IPython
+        pip install mypy
+    - name: Analyze the code with mypy
+      run: |
+        mypy $(git ls-files '*.py')

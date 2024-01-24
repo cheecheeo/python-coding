@@ -1,8 +1,6 @@
 """
 Week 6 exercises
 https://docs.google.com/presentation/d/1BNARjfGXtRCFCsGdxFB-c6XXUyrkgVsWAE2e4rA7kuA/edit?usp=sharing
-also read, familiarize, get some questions ready from:
-
 edit and change the files however you wish!
 """
 
@@ -86,7 +84,7 @@ treeME5 = ("Gandalf", treeME3, treeME4)
 treeME6 = ("Middle Earth", treeME2, treeME5)
 
 """
-Exercise: Name and assign variables with the following values from treeME6 (tuples):
+Exercise: Name and assign variables with the following values accessed from treeME6:
 1. "Middle Earth"
 2. 1980
 3. "Frodo"

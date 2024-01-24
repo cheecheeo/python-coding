@@ -74,7 +74,7 @@ def increment_max_five2(max_five):
     # make sure max_five is greater than 0
     # return the smallest of 5 or max_five
     # no min or max functions
-    return None
+    return max_five
 
 # write a binary function `min_of_two` that returns the smallest of its arguments
 # write a binary function `max_of_two` that returns the largest of its arguments
@@ -122,6 +122,16 @@ west_description = "A wall with a shelf in front of it blocks your way."
 
 add_and_return_second = lambda x1, x2: (x2, x1 + x2)
 tuple_to_binary = lambda function, tuple: function(tuple[0], tuple[1])
+
+def add_thing(x,y):
+    step_1 = add_and_return_second(x, y)
+    a, b = step_1
+    step_2 = add_and_return_second(a, b)
+    return step_2
+
+def add_thing2(x,y):
+    step_1 = add_and_return_second(x, y)
+    return add_and_return_second(step_1[0], step_1[1])
 
 # Exercise: write and name a function that takes "two steps" of
 # add_and_return_second

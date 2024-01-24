@@ -55,7 +55,7 @@ if_example_advanced_3 = None
 # improve this function to print 11 more lines when called.
 def print_twelve_different_values():
     print("On the first day of Christmas my true love gave to me: a partridge in a pear tree")
-    # pylint: disable=useless-return
+    # pylint: disable-next=useless-return
     return None
 
 # write and name a function...

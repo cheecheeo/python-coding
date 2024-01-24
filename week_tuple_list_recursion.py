@@ -1,9 +1,12 @@
-# Week 5 exercises
-# TODO
-# edit and change the files however you wish!
+"""
+Future work exercises
+https://docs.google.com/presentation/d/1BNARjfGXtRCFCsGdxFB-c6XXUyrkgVsWAE2e4rA7kuA/edit?usp=sharing
+also read, familiarize, get some questions ready from:
+
+edit and change the files however you wish!
+"""
 
 import IPython
-import math
 
 x = 42
 y = "John"
@@ -24,6 +27,8 @@ tree1 = (6, right_left, right_right)
 tree2 = (4, tree0, tree1)
 # Exercise: define a variable `tree3` with depth 3 holding both int and
 # float values
+
+# Exercise: write the sum_analog_of_factorial function.
 
 def factorial(n):
     return None

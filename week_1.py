@@ -1,8 +1,8 @@
-# Week 1 exercises
-# https://docs.google.com/presentation/d/12dIIoWzSk9o9POnC4bupmDM8N0ZtsyrtAFAi5qBhJDs/edit?usp=sharing
-# edit and change the files however you wish!
-
-import math
+"""
+Week 1 exercises
+https://docs.google.com/presentation/d/12dIIoWzSk9o9POnC4bupmDM8N0ZtsyrtAFAi5qBhJDs/edit?usp=sharing
+edit and change the files however you wish!
+"""
 
 xInt = 42
 xBool = True

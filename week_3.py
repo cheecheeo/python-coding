@@ -1,12 +1,10 @@
+"""
 # Week 3 exercises
 # https://docs.google.com/presentation/d/1jJSEq7pDfnVKXkB_WdiJ9qFXr3dCimJ_05KKrQ4odDk/edit?usp=sharing
 # edit and change the files however you wish!
+"""
 
 import IPython
-import math
-
-import week_1
-import week_2
 
 if_example_function = lambda x, y: \
     "x is big, y is small"   if x > 12 and y < 5 else \
@@ -57,7 +55,7 @@ if_example_advanced_3 = None
 # improve this function to print 11 more lines when called.
 def print_twelve_different_values():
     print("On the first day of Christmas my true love gave to me: a partridge in a pear tree")
-    return None
+    return None # pylint: disable=useless-return
 
 # write and name a function...
 #     to return the negated value of a number

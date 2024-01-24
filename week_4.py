@@ -1,9 +1,10 @@
-# Week 4 exercises
-# https://docs.google.com/presentation/d/1MT80l7w4i3x0oK6uXbcqqQTnPOSBLB9RCgqurdqTqQY/edit?usp=sharing
-# edit and change the files however you wish!
+"""
+Week 4 exercises
+https://docs.google.com/presentation/d/1MT80l7w4i3x0oK6uXbcqqQTnPOSBLB9RCgqurdqTqQY/edit?usp=sharing
+edit and change the files however you wish!
+"""
 
 import IPython
-import math
 
 t2 = (5, "hello")
 t3 = ("John", "Jacob", 25)

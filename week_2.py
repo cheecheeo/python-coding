@@ -1,9 +1,10 @@
-# Week 2 exercises
-# https://docs.google.com/presentation/d/1gHHt_LSXOmigaETN11ub2eJX0QpC1ooak0oDJd--XLA/edit?usp=sharing
-# edit and change the files however you wish!
+"""
+Week 2 exercises
+https://docs.google.com/presentation/d/1gHHt_LSXOmigaETN11ub2eJX0QpC1ooak0oDJd--XLA/edit?usp=sharing
+edit and change the files however you wish!
+"""
 
 import IPython
-import math
 
 import week_1
 
@@ -31,7 +32,7 @@ min_42_5 = None
 min_0_negative_1 = None
 min_5_5 = None
 min_5_3 = None
-min_5_3_0 = min(5,min(3,0))
+min_5_3_0 = min(5,min(3,0)) # pylint: disable=nested-min-max
 min_5_3_12 = None
 min_5_30_12 = None
 

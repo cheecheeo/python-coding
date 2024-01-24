@@ -26,5 +26,6 @@ jobs:
                --disable=missing-function-docstring \
                --disable=invalid-name \
                --disable=no-else-return \
+               --disable=unused-argument \
                --max-line-length=100 \
                --disable=fixme $(git ls-files '*.py')

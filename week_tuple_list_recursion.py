@@ -6,6 +6,7 @@ also read, familiarize, get some questions ready from:
 edit and change the files however you wish!
 """
 
+import doctest
 import IPython
 
 # TODO move to xdoctest
@@ -32,7 +33,7 @@ def addition(x, y):
     >>> addition(0, 5)
     5
     """
-    return None
+    return x + y
 
 def range_week_7(n):
     """
@@ -61,7 +62,7 @@ def power(x, y):
     >>> power(3, 0)
     1
     """
-    return None
+    return x ** y
 
 def is_even(n):
     return None
@@ -85,7 +86,7 @@ def unconstruct(tuple_list):
 
 def remove(tuple_list, x):
     """
-    >>> remove(from_list(range(0,5)), 3) == from_list([0,1,2,4,5])
+    >>> remove(from_list(range(0,5)), 3) == from_list([0,1,2,4,5]) # doctest: +SKIP
     True
     """
     return None
@@ -108,6 +109,7 @@ def to_list(tuple_list):
            [tuple_list[0]] + to_list(tuple_list[1:][0])
 
 def main():
+    doctest.testmod()
     IPython.embed()
 
 if __name__ == "__main__":

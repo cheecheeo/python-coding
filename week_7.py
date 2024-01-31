@@ -123,6 +123,10 @@ def greatest_common_divisor(x, y):
 
     return None
 
+# Exercise: read this AI-generated code: https://sl.bing.net/joDmXp3k5NQ and use it
+# to help you write a function named least_common_multiple that uses greatest_common_divisor to
+# calculate the least common multiple of two arguments.
+
 def main():
     """
     Main function. doctest and ipython

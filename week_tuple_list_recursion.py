@@ -40,9 +40,9 @@ def range_week_7(n):
     >>> range_week_7(12) == list(range(12))
     True
     """
-    def help(n):
-        return [] if n < 0 else help(n-1) + [n]
-    return help(n-1)
+    def helper(n):
+        return [] if n < 0 else helper(n-1) + [n]
+    return helper(n-1)
 
 # Exercise complete the power function using recursion.
 def power(x, y):

@@ -54,7 +54,7 @@ def addition(x, y):
     Addition function. You can assume that the argument `y` is always 0 or greater. x + y
     Idea:
     Decrement y and increment x until y is 0, then return x.
-    See slide 11 here: https://docs.google.com/presentation/d/1zdyUYW7LCaMZtY8L-QB1NBUz5pZE3sRZt0J5YpywfGM/edit#slide=id.g2b739b602d8_0_16
+    See slide 11 here: https://v.gd/pKz6jl
     >>> addition(5, 3)
     8
     >>> addition(5, 0)

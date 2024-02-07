@@ -25,11 +25,6 @@ tripleME2 = ("Legolas", tripleME0, tripleME1)
 # Exercise:
 pippin = tripleME2[len(tripleME2)-3:]
 
-def reduce(f, xs, z):
-    first = xs[:1]
-    return z if list(first) == [] else \
-           reduce(f, xs[1:], f(z, first[0]))
-
 def reduce_john(f, xs, z):
     """
     This function: https://docs.python.org/3/library/functools.html#functools.reduce
@@ -63,7 +58,6 @@ def reduce(f, xs, z):
         return z
     else:
         return reduce(f, xs[1:], f(z, first[0]))
-
 
 # Exercise complete the power function using recursion.
 def power(x, y):

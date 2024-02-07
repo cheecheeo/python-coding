@@ -28,5 +28,6 @@ jobs:
                --disable=no-else-return \
                --disable=unused-argument \
                --disable=useless-return \
+               --disable=use-implicit-booleaness-not-comparison \
                --max-line-length=100 \
                --disable=fixme $(git ls-files '*.py')

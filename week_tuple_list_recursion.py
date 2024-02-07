@@ -17,33 +17,53 @@ import IPython
 # maximum element in a list
 # count - python function
 
-# logN function recursive
+# tuple indexing and slicing
+tripleME0 = ("Frodo", 33, 35)
+tripleME1 = ("Pippin", 28, 87)
+tripleME2 = ("Legolas", tripleME0, tripleME1)
 
-# Exercise complete the addition function using recursion. Using only the functions
-# addition function recursive - provide only increment and decrement function
-def addition(x, y):
-    """
-    Addition function. You can assume that the argument `y` is always 0 or greater. x + y
-    Idea:
-    Decrement y and increment x until y is 0, then return x.
-    >>> addition(5, 3)
-    8
-    >>> addition(5, 0)
-    5
-    >>> addition(0, 5)
-    5
-    """
-    return x + y
+# Exercise:
+pippin = tripleME2[len(tripleME2)-3:]
 
-def range_week_7(n):
+def reduce(f, xs, z):
+    first = xs[:1]
+    return z if list(first) == [] else \
+           reduce(f, xs[1:], f(z, first[0]))
+
+def reduce_john(f, xs, z):
     """
-    Homebrew range function
-    >>> range_week_7(12) == list(range(12))
-    True
+    This function: https://docs.python.org/3/library/functools.html#functools.reduce
+    >>> reduce_john(lambda x, y: x * y, [1, 2, 3], 1)
+    6
+    >>> reduce_john(lambda x, y: x * y, [], 1)
+    1
+    >>> reduce_john(lambda x, y: x+y, [1, 2, 3, 4, 5], 0)
+    15
+    >>> reduce_john(lambda x, y: (x, y), [1, 2, 3, 4, 5], ())
+    ((((((), 1), 2), 3), 4), 5)
     """
-    def helper(n):
-        return [] if n < 0 else helper(n-1) + [n]
-    return helper(n-1)
+    first = xs[:1]
+    return z if list(first) == [] else \
+           reduce_john(f, xs[1:], f(z, first[0]))
+
+def reduce(f, xs, z):
+    """
+    An if-statement rewrite of reduce_john.
+    >>> reduce(lambda x, y: x * y, [1, 2, 3], 1)
+    6
+    >>> reduce(lambda x, y: x * y, [], 1)
+    1
+    >>> reduce(lambda x, y: x+y, [1, 2, 3, 4, 5], 0)
+    15
+    >>> reduce(lambda x, y: (x, y), [1, 2, 3, 4, 5], ())
+    ((((((), 1), 2), 3), 4), 5)
+    """
+    first = xs[:1]
+    if list(first) == []:
+        return z
+    else:
+        return reduce(f, xs[1:], f(z, first[0]))
+
 
 # Exercise complete the power function using recursion.
 def power(x, y):

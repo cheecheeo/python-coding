@@ -6,7 +6,8 @@ edit and change the files however you wish!
 
 import math
 
-# note: when expressions are "naked" in a python script they aren't displayed, they must be "print"ed
+# note: when expressions are "naked" in a python script they aren't displayed,
+# they must be "print"ed
 6 + 4 * 9
 print(6 + 4 * 9)
 print("HERE")
@@ -23,7 +24,8 @@ print(42 <= 42)
 print(42 >= 42)
 
 x = 1337
-# Exercise. Change the value of `x` to "exercise" all the different branches of the two if-statements below.
+# Exercise. Change the value of `x` to "exercise" all the different branches
+# of the two if-statements below.
 if x > 122:
     print("x is greater")
 else:
@@ -35,7 +37,8 @@ else:
     print("x is really great")
 
 y = 42.0
-# Exercise. Change the value of `y` to "exercise" all the different branches of the two if-statements below.
+# Exercise. Change the value of `y` to "exercise" all the different branches
+# of the two if-statements below.
 if y < -3.0:
     print("y is small")
 else:

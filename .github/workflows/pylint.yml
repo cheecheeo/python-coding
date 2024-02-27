@@ -30,5 +30,8 @@ jobs:
                --disable=useless-return \
                --disable=duplicate-code \
                --disable=use-implicit-booleaness-not-comparison \
+               --disable=comparison-of-constants \
+               --disable=comparison-with-itself \
+               --disable=chained-comparison \
                --max-line-length=100 \
                --disable=fixme $(git ls-files '*.py')

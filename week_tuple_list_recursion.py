@@ -9,6 +9,10 @@ edit and change the files however you wish!
 import doctest
 import IPython
 
+# skipped `is`
+# recursion: do this n times, while
+# next: modulus, division, divmod, (//)
+
 # TODO move to xdoctest
 # student REPL and development environment
 # Exercise: write the sum_analog_of_factorial function.

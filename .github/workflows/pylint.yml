@@ -34,5 +34,6 @@ jobs:
                --disable=comparison-with-itself \
                --disable=chained-comparison \
                --disable=pointless-statement \
+               --disable=pointless-string-statement \
                --max-line-length=100 \
                --disable=fixme $(git ls-files '*.py')

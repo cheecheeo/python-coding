@@ -35,5 +35,6 @@ jobs:
                --disable=chained-comparison \
                --disable=pointless-statement \
                --disable=pointless-string-statement \
+               --disable=unidiomatic-typecheck \
                --max-line-length=100 \
                --disable=fixme $(git ls-files '*.py')
